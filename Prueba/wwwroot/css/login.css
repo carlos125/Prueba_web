@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+    --primaryDark:#0B497A;
+    --primaryRed:#1545B1;
+    --secondary:#742B4C; 
+    --secondaryLight:#FFFFFF;
+    --blue:#235496;
+    --green:#32b84f;
+    --gray:#7a7878;
+    --background:#f5f2f2;
+    --z-fixed: 100;
+    --header-height: 3rem;
+    --nav-width: 80px;
+    --wrap:#ddd9d980;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Titillium Web', sans-serif;
+}
+.ftco-section {
+    padding: 5em 0;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+
+.heading-section {
+    font-size: 28px;
+    color: #000;
+}
+
+.img{
+    /* background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(225,39,40,0.5382528011204482) 100%); */
+    background-color: var(--secondaryLight);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--wrap);
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.24);
+}
+
+.img,
+.login-wrap {
+    width: 50%;
+}
+
+@media (max-width: 991.98px) {
+
+    .img,
+    .login-wrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .wrap .img {
+        height: 250px;
+    }
+}
+
+.login-wrap {
+    position: relative;
+    background: #fff h3;
+    background-font-weight: 300;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 700;
+}
+
+.form-group a {
+    color: gray;
+}
+
+.form-control {
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 12px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.form-control:focus,
+.form-control:active {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid var(--primaryRed);
+}
+
+.login-wrap h3{
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.btn-login{
+    margin-top: 3rem;
+    background-color: var(--primaryRed);
+    color: #ffffff;
+    border: 1px solid var(--secondaryLight);
+    transition: 0.3s background-color ease-in-out;
+}
+.btn-login:hover{
+    background-color: var(--primaryDark);
+    border: 1px solid var(--secondaryLight);
+}
+
+.logo-igr{
+    margin-top: 6rem;
+}
+
+#pwd{
+    position: relative;
+}
+
+.toggle-password{
+    position: absolute;
+    top: 55%;
+    right: 10px;
+}
+
+.clear-password{
+    position: absolute;
+    top: 63%;
+    right: 35px;
+    border-radius: 50%;
+    background-color: #000;
+    color: var(--secondaryLight);
+    font-size: 8px;
+    padding: 1px 3px;
+}
+
+.modal{
+    background-color: var(--wrap);
+}
+.modal, .modal-body, .modal-title{
+    font-size: 14px;
+}
+.modal .form-field input{
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    border: none;
+    outline: none;
+    background:none;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    
+}
+
+.modal .form-field {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    border: 1px solid var(--background);
+   
+}
+
+.modal .form-field .fas {
+    color: #555;
+}
+
+.modal .btn-login {
+    box-shadow: none;
+    width: 40%;
+    height: 40px;
+    background-color: var(--primaryRed);
+    color: #fff;
+    border-radius: 13px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.modal .btn-login:hover {
+    background-color: var(--primaryDark);
+}
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--primaryRed);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--primaryDark);
+    cursor:pointer;
+}
+
+.img-logo-container img{
+    width: 80px;
+    object-fit: contain;
+}
+
+.img-logo-container .title-logo{
+    font-weight: 600;
+    color: var(--primaryDark);
+}
